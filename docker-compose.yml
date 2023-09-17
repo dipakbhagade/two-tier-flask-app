@@ -2,7 +2,7 @@ version: '3'
 services:
   
   backend:
-    build:
+    image: 'dipak1994/two-tier-app:latest'
       context: .
     ports:
       - "5000:5000"
