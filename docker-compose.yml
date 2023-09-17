@@ -2,7 +2,7 @@ version: '3'
 services:
   
   backend:
-    image : "dipak1994/two-tier-app:latest"
+    image : "dipak1994/two-tier-app"
       context: .
     ports:
       - "5000:5000"
@@ -15,7 +15,7 @@ services:
       - mysql
 
   mysql:
-    image : "dipak1994/two-tier-app:latest"
+    image : "dipak1994/two-tier-app"
     environment:
       MYSQL_ROOT_PASSWORD: your_root_password
       MYSQL_DATABASE: your_database
